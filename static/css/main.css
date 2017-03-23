@@ -1,10 +1,17 @@
-html {
-  font: 400 14px / 20px "Oswald", "Helvetica Neue",Helvetica,Arial,sans-serif; }
+/* "Oswald", */
 
+html {
+  font: 400 14px / 20px "Noto Sans KR", "Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+pre, code {
+    font-family: Hack, monospace;
+    background: #8DB2BE;
+  }
+  
 a {
   color: #33b5e5; }
   a:hover {
-    color: #0099cc; }
+      color: #0099cc; }
 
 .uk-navbar-brand {
   text-transform: uppercase; }
