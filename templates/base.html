@@ -47,19 +47,31 @@
 {% endif %}
 {% endblock %}
 <link href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed"/>
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-<link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
-<link href="//cdn.jsdelivr.net/font-hack/2.020/css/hack-extended.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/font-hack/2.020/css/hack-extended.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:800italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--
+<script src="{{ SITEURL }}/theme/js/jquery.sticky-kit.js"></script>
+<script src="{{ SITEURL }}/theme/js/plugins.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/js/components/search.min.js"></script>
+<link href="{{ SITEURL }}/theme/css/tipuesearch.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/css/components/search.min.css" rel="stylesheet">
+-->
 
 <link href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/css/uikit.min.css" rel="stylesheet">
 
 {% if not DISABLE_SEARCH %}
-<link href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/css/components/search.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="{{ SITEURL }}/theme/js/tipuesearch_content.js"></script>
 <link href="{{ SITEURL }}/theme/css/tipuesearch.css" rel="stylesheet">
+<script src="{{ SITEURL }}/theme/js/tipuesearch_set.js"></script>
+<script src="{{ SITEURL }}/theme/js/tipuesearch.min.js"></script>
+<script src="{{ SITEURL }}/theme/js/main-search.js"></script>
+{% else %}
+<script src="{{ SITEURL }}/theme/js/main.js"></script>
 {% endif %}
 
 <link href="{{ SITEURL }}/theme/css/solarized-dark.min.css" rel="stylesheet"></link>
@@ -68,23 +80,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/js/uikit.min.js"></script>
-
-{% if not DISABLE_SEARCH %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/js/components/search.min.js"></script>
-<script src="{{ SITEURL }}/theme/js/tipuesearch_set.js"></script>
-<script src="{{ SITEURL }}/theme/js/tipuesearch_content.js"></script>
-<link href="{{ SITEURL }}/theme/css/tipuesearch.css" rel="stylesheet">
-<script src="{{ SITEURL }}/theme/js/tipuesearch.min.js"></script>
-{% endif %}
-
-<script src="{{ SITEURL }}/theme/js/jquery.sticky-kit.js"></script>
-<script src="{{ SITEURL }}/theme/js/plugins.js"></script>
-
-{% if DISABLE_SEARCH %}
-<script src="{{ SITEURL }}/theme/js/main.js"></script>
-{% else %}
-<script src="{{ SITEURL }}/theme/js/main-search.js"></script>
-{% endif %}
 
 </head>
 <body>
@@ -123,7 +118,7 @@
               <div style="clear: both;"></div>
                 </form>
             </div>
-            {% endif %}
+	    {% endif %}
 
             <div class="uk-panel uk-panel-box">
                 <ul class="uk-nav uk-nav-side">
