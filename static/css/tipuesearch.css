@@ -39,10 +39,10 @@ http://www.tipue.com/search
 #tipue_search_input
 {
      color: #333;
-     max-width: 100px;
+     max-width: 90px;
      max-height: 30px;
 	padding: 5px;
-	border: 1px solid #e3e3e3;
+	border: 1px solid #000;
 	border-radius: 0;
 	-moz-appearance: none;
 	-webkit-appearance: none;

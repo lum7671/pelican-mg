@@ -1,6 +1,7 @@
 /* "Oswald", */
 
 html {
+    background-color: #000;
     font: 400 14px / 20px "Noto Sans KR", "Helvetica Neue",Helvetica,Arial,sans-serif;}
 
 /* For use with the code_line-number_word-wrap_switcher_jquery.js Pelican plugin */
@@ -79,6 +80,17 @@ a:hover {
 .uk-pagination > .uk-active > span {
     background: #28D1B2; }
 
+.uk-panel-box {
+    background: #073642;}
+
+.uk-nav-side>li>a {
+    color: #888;}
+
+.uk-nav-side>li>a:focus, .uk-nav-side>li>a:hover {
+    background: rgba(0,0,0,.05);
+    color: #a2f;
+    outline: 0;}
+
 .uk-icon-medium {
     margin-right: 0.3em; }
 
@@ -109,7 +121,7 @@ a:hover {
 
 .mg-header {
     padding: 1em 0;
-    background-color:#3B170B;
+    background-color:#073642;
 }
 
 .mg-brand {
@@ -120,7 +132,7 @@ a:hover {
     color: white;
     text-decoration: none; }
 .mg-brand:active, .mg-brand:visited {
-    color: #b44;}
+    color: #666;}
 .mg-brand:hover, .mg-brand:focus {
     color: #ccc; }
 @media (max-width: 767px) {
@@ -130,10 +142,11 @@ a:hover {
 	font-size: 2em; } }
 
 .mg-tagline {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 800;
+    font-family: "Noto Sans KR","Open Sans",sans-serif;
+    font-weight: 200;
     padding: 1em 0 0;
-    color: #6E6E6E;}
+    color: #6e6e6e;
+}
 
 @media (min-width: 1220px) {
     .mg-tagline {
@@ -196,3 +209,8 @@ a:hover {
     color: #000;
     padding: 0.2em 0; }
 
+.blog_title_icon {
+    width: 50px;
+    height: 50px;
+    padding-bottom: 10px;
+}
