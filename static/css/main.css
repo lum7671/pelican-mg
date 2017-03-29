@@ -1,12 +1,15 @@
 /* "Oswald", */
 
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
 html {
     background-color: #000;
-    font: 400 14px / 20px "Noto Sans KR", "Helvetica Neue",Helvetica,Arial,sans-serif;}
+    font: 400 14px / 20px 'Noto Sans KR', "Helvetica Neue", Helvetica,Arial, sans-serif;}
 
 /* For use with the code_line-number_word-wrap_switcher_jquery.js Pelican plugin */
 code {
-    font-family: Hack, monospace;
+    font-family: 'Nanum Gothic Coding', Hack, monospace;
     background: #000000;
     overflow: auto;
     /* This uses `white-space: pre-wrap` to get elements within <pre> tags to wrap. Python, for code chunks within three backticks (```), doesn't wordwrap code lines by default, because they're within <pre> tags, which don't wrap by default. See https://github.com/github/markup/issues/168 , which is specifically about this parsing issue, even though that link's discussion is talking about GitHub. */
