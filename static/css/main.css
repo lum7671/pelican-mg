@@ -7,7 +7,7 @@
 
 html {
     background-color: #000;
-    font: 400 14px / 20px 'Noto Sans KR', "Helvetica Neue", Helvetica,Arial, sans-serif;}
+    font: 400 14px / 20px "Noto Sans", "Noto Sans CJK KR", "Open Sans", "Helvetica Neue", Helvetica,Arial, sans-serif;}
 
 /* For use with the code_line-number_word-wrap_switcher_jquery.js Pelican plugin */
 code {
@@ -25,13 +25,13 @@ code {
 /* Following http://bililite.com/blog/2012/08/05/line-numbering-in-pre-elements/, use CSS to add line numbers to all spans that have the class 'code-line' */
 
 .codehilite pre {
-    font-family: Hack, monospace;
+    font-family: 'Nanum Gothic Coding', Hack, monospace;
     background: #000000;
     counter-reset: linecounter;
     padding-left: 2em;
 }
 .codehilite pre span.code-line {
-    font-family: Hack, monospace;
+    font-family: 'Nanum Gothic Coding', Hack, monospace;
     background: #000000;
     counter-increment: linecounter;
     padding-left: 1em;
@@ -39,7 +39,7 @@ code {
     display: inline-block;
 }
 .codehilite pre span.code-line:before {
-    font-family: Hack, monospace;
+    font-family: 'Nanum Gothic Coding', Hack, monospace;
     background: #000000;
     content: counter(linecounter);
     padding-right: 1em;
@@ -130,7 +130,7 @@ a:hover {
 }
 
 .mg-brand {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Noto Sans", "Noto Sans CJK KR", "Open Sans", sans-serif;
     font-style: italic;
     font-size: 2.5em;
     padding-left: 0;
@@ -147,7 +147,7 @@ a:hover {
 	font-size: 2em; } }
 
 .mg-tagline {
-    font-family: "Noto Sans KR","Open Sans",sans-serif;
+    font-family: "Noto Sans", "Noto Sans CJK KR", "Open Sans",sans-serif;
     font-weight: 200;
     padding: 1em 0 0;
     color: #6e6e6e;
