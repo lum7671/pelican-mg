@@ -50,6 +50,7 @@
 <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/font-hack/2.020/css/hack-extended.min.css" rel="stylesheet">
 
+<link href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/css/uikit.min.css" rel="stylesheet">
 <!--
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
@@ -59,11 +60,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/js/components/search.min.js"></script>
 <link href="{{ SITEURL }}/theme/css/tipuesearch.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/css/components/search.min.css" rel="stylesheet">
-<link href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/css/uikit.min.css" rel="stylesheet">
 -->
 
 
 {% if not DISABLE_SEARCH %}
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/css/components/search.min.css">
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/tipuesearch.css">
 <link href="{{ SITEURL }}/theme/css/tipuesearch.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="{{ SITEURL }}/theme/js/tipuesearch_content.js"></script>
@@ -79,7 +81,7 @@
 <link href="{{ SITEURL }}/theme/css/styles.css" rel="stylesheet">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/js/uikit.min.js"></script>
 
 </head>
 <body>
@@ -89,8 +91,8 @@
 
 <header class=" mg-header uk-navbar uk-navbar-attached">
 
-<div class="uk-container uk-container-center">
-  
+    <div class="uk-container uk-container-center">
+
         <a class="mg-brand uk-navbar-brand uk-hidden-small" href="{{ SITEURL }}"><img src="{{ SITEURL }}/images/blogoimg.png" class="blog_title_icon">{% if ALT_NAME %}{{ ALT_NAME }}{% else %}{{ SITENAME }}{% endif %}</a>
         <div class="mg-tagline uk-navbar-content uk-hidden-small">{% if SITESUBTITLE %}{{ SITESUBTITLE }}{% endif %}</div>
         <a class="uk-navbar-toggle uk-visible-small" href="#mg-offcanvas" data-uk-offcanvas></a>
@@ -118,7 +120,7 @@
               <div style="clear: both;"></div>
                 </form>
             </div>
-	    {% endif %}
+            {% endif %}
 
             <div class="uk-panel uk-panel-box">
                 <ul class="uk-nav uk-nav-side">
