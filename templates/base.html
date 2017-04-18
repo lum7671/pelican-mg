@@ -59,8 +59,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/js/components/search.min.js"></script>
 <link href="{{ SITEURL }}/theme/css/tipuesearch.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/css/components/search.min.css" rel="stylesheet">
-<link href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/css/uikit.min.css" rel="stylesheet">
 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/css/uikit.min.css" rel="stylesheet">
 
 
 {% if not DISABLE_SEARCH %}
@@ -73,13 +73,14 @@
 {% else %}
 <script src="{{ SITEURL }}/theme/js/main.js"></script>
 {% endif %}
-
+<!--
 <link href="{{ SITEURL }}/theme/css/solarized-dark.min.css" rel="stylesheet"></link>
+-->
 <link href="{{ SITEURL }}/theme/css/main.css" rel="stylesheet">
 <link href="{{ SITEURL }}/theme/css/styles.css" rel="stylesheet">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/js/uikit.min.js"></script>
 
 </head>
 <body>
@@ -90,7 +91,7 @@
 <header class=" mg-header uk-navbar uk-navbar-attached">
 
 <div class="uk-container uk-container-center">
-  
+
         <a class="mg-brand uk-navbar-brand uk-hidden-small" href="{{ SITEURL }}"><img src="{{ SITEURL }}/images/blogoimg.png" class="blog_title_icon">{% if ALT_NAME %}{{ ALT_NAME }}{% else %}{{ SITENAME }}{% endif %}</a>
         <div class="mg-tagline uk-navbar-content uk-hidden-small">{% if SITESUBTITLE %}{{ SITESUBTITLE }}{% endif %}</div>
         <a class="uk-navbar-toggle uk-visible-small" href="#mg-offcanvas" data-uk-offcanvas></a>
@@ -222,4 +223,3 @@
 {% include 'analytics.html' %}
 </body>
 </html>
-
