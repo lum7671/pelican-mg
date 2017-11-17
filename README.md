@@ -11,6 +11,10 @@ Screenshots
 
 Here is how the home page look like
 
+![lum7671_mg_001](https://github.com/lum7671/pelican-mg/blob/master/lum7671_forked_pelican-mg-001.png)
+
+-----------------
+
 ![mg home page screenshot](https://raw.githubusercontent.com/lucachr/pelican-mg/master/home-page-screenshot.png)
 
 This is the article page
