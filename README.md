@@ -11,7 +11,7 @@ Screenshots
 
 Here is how the home page look like
 
-![lum7671_mg_001](https://github.com/lum7671/pelican-mg/blob/master/lum7671_forked_pelican-mg-001.png)
+[![lum7671_mg_001](https://github.com/lum7671/pelican-mg/blob/master/lum7671_forked_pelican-mg-001.png)](https://oh.mypi.co/)
 
 more : [Lum7671's Weblog](https://oh.mypi.co/)
 
