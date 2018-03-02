@@ -4,10 +4,21 @@
 @import https://fonts.googleapis.com/css?family=Inconsolata;
 @import https://fonts.googleapis.com/css?family=PT+Sans;
 @import https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700;
+
+@font-face {
+    font-family: 'Iropke Batang';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/IropkeBatangM.eot');
+    src: url('./fonts/IropkeBatangM.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/IropkeBatangM.woff') format('woff');
+}
+
+
 html
 {
 	background-color: #000;
-	font: 300 16px / 20px "Noto Sans","Noto Sans CJK KR","Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font: 300 16px / 20px 'Iropke Batang',"Noto Sans","Noto Sans CJK KR","Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 code
 {
@@ -689,7 +700,7 @@ table
 }
 html
 {
-	font-family: 'Noto Sans','Noto Sans CJK KR','PT Sans',sans-serif;
+	font-family: 'Iropke Batang','Noto Sans','Noto Sans CJK KR','PT Sans',sans-serif;
 }
 pre,code
 {
@@ -697,7 +708,7 @@ pre,code
 }
 h1,h2,h3,h4,h5,h6
 {
-	font-family: 'Noto Sans','Noto Sans CJK KR',sans-serif;
+	font-family: 'Iropke Batang','Noto Sans','Noto Sans CJK KR',sans-serif;
 	font-weight: 700;
 }
 html
@@ -713,6 +724,10 @@ body
 	margin: 0 auto;
 	max-width: 23cm;
 	padding: 1em;
+}
+p
+{
+	line-height: 1.5;
 }
 code
 {
