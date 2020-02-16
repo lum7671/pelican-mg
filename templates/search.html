@@ -4,32 +4,19 @@
 
 {% include 'common_seo.html' %}
 
-{% block content %}
-
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-<script async src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-<script src="{{ SITEURL }}/theme/js/tipuesearch_content.js"></script>
-<link href="{{ SITEURL }}/theme/css/tipuesearch.css" rel="stylesheet">
-<script src="{{ SITEURL }}/theme/js/tipuesearch_set.js"></script>
-<script src="{{ SITEURL }}/theme/js/tipuesearch.min.js"></script>
-
-<link href="{{ SITEURL }}/theme/css/solarized-dark.min.css" rel="stylesheet"></link>
-<link href="{{ SITEURL }}/theme/css/main.css" rel="stylesheet">
-<link href="{{ SITEURL }}/theme/css/styles.css" rel="stylesheet">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/js/uikit.min.js"></script>
-
 <script>
 $(document).ready(function() {
      $('#tipue_search_input').tipuesearch({
+          'show': 20,
+          'newWindow': true,
+          'imageZoom': true,
           'mode': 'json',
           'contentLocation': 'tipuesearch_content.json'
      });
 });
 </script>
 
+{% block content %}
 <div class="uk-width-medium-4-5">
     <h1 class="uk-heading-large">Search results</h1>
 
@@ -37,6 +24,3 @@ $(document).ready(function() {
 
 </div>
 {% endblock %}
-
-
-
